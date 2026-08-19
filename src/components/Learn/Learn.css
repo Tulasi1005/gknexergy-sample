@@ -1,0 +1,442 @@
+/* ==========================================================================
+   GK Nexergy - High-Impact Visible & Animated Learn Page
+   ========================================================================== */
+
+.gk-learn-section {
+  background: #060b14;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+  color: #ffffff;
+  padding: 60px 0 80px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Header & Typography */
+.gk-learn-header {
+  max-width: 840px;
+  margin: 0 auto 40px auto;
+}
+
+.gk-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid #0ea5e9;
+  color: #38bdf8;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+.gk-headline {
+  font-size: 3.1rem;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.gk-gradient-text {
+  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gk-lead-text {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.gk-lead-text strong {
+  color: #f1f5f9;
+}
+
+/* Stats Bar */
+.gk-stats-row {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 12px 28px;
+  border-radius: 16px;
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.gk-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.stat-lbl {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.gk-stat-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ==========================================================================
+   CARDS DESIGN - HIGH CONTRAST & ANIMATIONS
+   ========================================================================== */
+
+.gk-course-card {
+  width: 100%;
+  background: #0f172a;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gk-course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Card Top Number & Tag */
+.gk-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.gk-tag-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.gk-card-number {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.25;
+  font-family: monospace;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gk-course-card:hover .gk-card-number {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+/* Content Details */
+.gk-course-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  line-height: 1.25;
+}
+
+.gk-course-stack {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.gk-pill-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.gk-info-badge {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.gk-target-audience {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid;
+}
+
+/* Syllabus Box */
+.gk-syllabus-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.syllabus-heading {
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+}
+
+.syllabus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.syllabus-list li {
+  font-size: 0.95rem;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.4;
+}
+
+.check-bullet {
+  font-weight: 900;
+}
+
+/* ==========================================================================
+   THEME COLOR PALETTES (Vibrant & High Contrast)
+   ========================================================================== */
+
+/* 1. Gold / Foundational */
+.theme-gold {
+  border-top: 4px solid #f59e0b;
+}
+.theme-gold .gk-tag-label {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.theme-gold .gk-course-stack {
+  color: #fbbf24;
+}
+.theme-gold .check-bullet {
+  color: #fbbf24;
+}
+.theme-gold .gk-target-audience {
+  border-color: #f59e0b;
+}
+.theme-gold:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.2);
+}
+
+/* 2. Crimson / Cyber Security */
+.theme-crimson {
+  border-top: 4px solid #ef4444;
+}
+.theme-crimson .gk-tag-label {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+.theme-crimson .gk-course-stack {
+  color: #f87171;
+}
+.theme-crimson .check-bullet {
+  color: #ef4444;
+}
+.theme-crimson .gk-target-audience {
+  border-color: #ef4444;
+}
+.theme-crimson:hover {
+  border-color: #ef4444;
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.2);
+}
+
+/* 3. Purple / AI & Marketing */
+.theme-purple {
+  border-top: 4px solid #a855f7;
+}
+.theme-purple .gk-tag-label {
+  background: rgba(168, 85, 247, 0.2);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+.theme-purple .gk-course-stack {
+  color: #c084fc;
+}
+.theme-purple .check-bullet {
+  color: #a855f7;
+}
+.theme-purple .gk-target-audience {
+  border-color: #a855f7;
+}
+.theme-purple:hover {
+  border-color: #a855f7;
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.2);
+}
+
+/* 4. Emerald / Databases */
+.theme-emerald {
+  border-top: 4px solid #10b981;
+}
+.theme-emerald .gk-tag-label {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+.theme-emerald .gk-course-stack {
+  color: #34d399;
+}
+.theme-emerald .check-bullet {
+  color: #10b981;
+}
+.theme-emerald .gk-target-audience {
+  border-color: #10b981;
+}
+.theme-emerald:hover {
+  border-color: #10b981;
+  box-shadow: 0 0 35px rgba(16, 185, 129, 0.2);
+}
+
+/* ==========================================================================
+   BUTTONS & ACTIONS
+   ========================================================================== */
+
+.gk-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gk-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #25d366;
+  color: #032d12;
+  font-weight: 800;
+  font-size: 0.98rem;
+  padding: 13px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.gk-whatsapp-btn:hover {
+  background: #22c35e;
+  color: #032d12;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+}
+
+.gk-call-direct {
+  text-align: center;
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 8px;
+  transition: color 0.2s ease;
+}
+
+.gk-call-direct:hover {
+  color: #ffffff;
+}
+
+/* Footer Banner */
+.gk-cta-footer-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 20px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.footer-banner-text h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.footer-banner-text p {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.gk-guidance-btn {
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 800;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.gk-guidance-btn:hover {
+  background: #38bdf8;
+  color: #04243b;
+  transform: scale(1.04);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gk-headline {
+    font-size: 2.2rem;
+  }
+  .gk-course-card {
+    padding: 1.6rem;
+  }
+  .gk-stats-row {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .gk-stat-divider {
+    display: none;
+  }
+}
