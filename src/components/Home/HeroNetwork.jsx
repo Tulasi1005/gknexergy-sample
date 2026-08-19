@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./HeroNetwork.css";
-import localCenterImage from "./main.png";
 
 const centerImage =
   "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=240&q=80";
